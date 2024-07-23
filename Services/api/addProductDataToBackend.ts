@@ -12,10 +12,8 @@ export const addProductDataToBackend = async (product: Product) => {
       "https://fakestoreapi.com/products",
       product
     );
-    console.log(response.data);
     return response.data;
   } catch (error) {
-    console.error("Error:", error);
     throw error;
   }
 };

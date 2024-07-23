@@ -14,12 +14,15 @@ const styles: { [key: string]: SxProps<Theme> } = {
     zIndex: 9999,
   },
   card: {
-    maxWidth: 333,
+    maxWidth: 350,
     mt: 6,
-    ":hover .MuiCardMedia-root": {
-      rotate: "1deg",
-      scale: "1.1",
-      transition: "0.35s",
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+    borderRadius: "8px",
+    overflow: "hidden",
+    transition: "transform 0.3s ease, box-shadow 0.3s ease",
+    ":hover": {
+      transform: "translateY(-8px)",
+      boxShadow: "0 12px 16px rgba(0, 0, 0, 0.2)",
     },
   },
   cardMedia: {
